@@ -1,0 +1,74 @@
+repositories {
+   mavenCentral()
+   mavenLocal()
+}
+
+apply plugin: 'war'
+apply plugin: 'project-report'
+apply plugin: 'eclipse'
+apply plugin: "jacoco"
+apply plugin: 'project-report'
+apply plugin: 'maven-publish'
+
+war {
+    archiveName = "amp-storage-api.war"
+	baseName = "amp-storage-api"
+	rootSpec.exclude("**/log4j2.properties")
+}
+
+configurations.all {
+	exclude group: "log4j", module:"log4j"
+	exclude group: "org.slf4j", module:"slf4j-simple"
+	exclude group: "org.slf4j", module:"slf4j-log4j12"
+	exclude group: 'commons-logging', module: 'commons-logging'
+	exclude group: 'org.springframework.boot', module: 'spring-boot-starter-logging'
+    exclude module: 'logback-classic'
+}
+
+evaluationDependsOn(':amp-service-restmodel')
+evaluationDependsOn(':amp-common-api')
+
+dependencies {
+		
+		compile "amp.service.common:amp-common-api:0.0.1-SNAPSHOT"
+        compile "amp.service.common:amp-service-restmodel:0.0.1-SNAPSHOT"
+    	
+        compile "org.springframework.boot:spring-boot-starter-web:$springBootVersion"
+        implementation "org.springframework.boot:spring-boot-starter-log4j2:$springBootVersion"
+        compile "org.springframework.boot:spring-boot-starter-data-jpa:$springBootVersion"
+        compile "org.springframework.boot:spring-boot-starter-tomcat:$springBootVersion"
+        compile("org.springframework.boot:spring-boot-starter-aop:$springBootVersion")
+        
+    	compile group: "org.springframework.boot", name: "spring-boot-configuration-processor", version:"$springBootVersion"
+        compile group: 'org.springframework', name: 'spring-webmvc', version: "$springMvcVersion"
+        
+        compile "org.apache.commons:commons-lang3:$commonsLangVersion"
+        compile "mysql:mysql-connector-java:$mysqlDriverVersion"
+        compile "org.apache.httpcomponents:httpclient:$httpClientVersion"
+        compile "com.fasterxml.jackson.core:jackson-databind:$jacksonDatabindVersion"
+          
+        //Logging API
+		compile group: 'org.slf4j' , name: 'slf4j-api', version: "$sl4jVersion"
+		//Logging log4j2 implementation for logging API above
+		compile group: 'org.apache.logging.log4j', name: 'log4j-slf4j-impl', version: "$log4j2Version"
+		//Logging log4j2 Commons Logging Bridge
+		compile group: 'org.apache.logging.log4j', name: 'log4j-jcl', version: "$log4j2Version"
+
+        compile "com.mchange:c3p0:$c3p0Version"
+        compile "javax.xml.bind:jaxb-api:$jaxbApiVersion"
+		compile "com.google.code.gson:gson:$gsonVersion"
+
+		testCompile "org.springframework.boot:spring-boot-starter-tomcat:$springBootVersion"
+        testCompile "org.springframework.boot:spring-boot-starter-test:$springBootVersion"
+        
+        testCompile "com.h2database:h2:$h2Version"
+        testCompile "junit:junit:$junitVersion"
+
+        providedCompile "javax.servlet:javax.servlet-api:$servletApiVersion"
+}
+
+configurations {
+    compile.exclude group: 'com.netflix'
+}
+
+defaultTasks 'clean', 'build','htmlDependencyReport', 'publishToMavenLocal', 'publish'

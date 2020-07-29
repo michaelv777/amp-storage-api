@@ -1,0 +1,215 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+		 
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>amp.storage.api</groupId>
+  <artifactId>amp-storage-api</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <name>amp-storage-api</name>
+  
+  <properties>
+    <org.slf4j-version>1.7.5</org.slf4j-version>
+    <jcl-over-slf4j.version>1.7.5</jcl-over-slf4j.version>
+    <jersey.version>1.17.1</jersey.version>
+    
+  </properties>
+  
+  <parent>
+  	<groupId>amp.framework</groupId>
+  	<artifactId>amp-framework</artifactId>
+  	<version>1.0-SNAPSHOT</version>
+  </parent>
+  
+  <developers>
+        <developer>
+            <name>Michael Veksler</name>
+        </developer>
+  </developers>
+    
+  <build>
+  	<finalName>amp-storage-api</finalName>
+  	
+    <resources>
+      <resource>
+        <directory>src/main/webapp</directory>
+        <excludes>
+          <exclude>**/*.java</exclude>
+        </excludes>
+      </resource>
+    </resources>
+    
+    <plugins>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>2.6</version>
+        <configuration>
+          <warSourceDirectory>src/main/webapp</warSourceDirectory>
+          <failOnMissingWebXml>false</failOnMissingWebXml>
+        </configuration>
+      </plugin>
+      
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.3</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+      
+      <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>build-helper-maven-plugin</artifactId>
+          <executions>
+              <execution>
+                  <phase>generate-sources</phase>
+                  <goals>
+                      <goal>add-source</goal>
+                  </goals>
+                  <configuration>
+                      <sources>
+                          <source>src/test/java</source>
+                      </sources>
+                  </configuration>
+              </execution>
+          </executions>
+      </plugin>
+      
+      <plugin>
+       <groupId>org.apache.maven.plugins</groupId>
+       <artifactId>maven-jar-plugin</artifactId>
+       <version>3.0.2</version>
+       <executions>
+         <execution>
+           <goals>
+             <goal>test-jar</goal>
+           </goals>
+         </execution>
+       </executions>
+     </plugin>
+    </plugins>
+  </build>
+
+  <dependencies>
+  	<!-- https://mvnrepository.com/artifact/javax/javaee-api -->
+  	<dependency>
+    	<groupId>amp.common.api</groupId>
+    	<artifactId>amp-common-api</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    
+  	<dependency>
+    	<groupId>amp.jpa.entities</groupId>
+    	<artifactId>amp-jpa-entities</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>junit</groupId>
+	  <artifactId>junit</artifactId>
+	  <version>4.12</version>
+    </dependency>
+    
+	<dependency>
+	    <groupId>com.sun.jersey</groupId>
+	    <artifactId>jersey-server</artifactId>
+	    <version>${jersey.version}</version>
+	</dependency>
+
+	
+	<dependency>
+	    <groupId>com.sun.jersey</groupId>
+	    <artifactId>jersey-servlet</artifactId>
+	    <version>${jersey.version}</version>
+	</dependency>
+
+	<dependency>
+        <groupId>com.sun.jersey.contribs</groupId>
+        <artifactId>jersey-multipart</artifactId>
+        <version>${jersey.version}</version>
+    </dependency>
+    
+    <dependency>
+        <groupId>com.sun.jersey</groupId>
+        <artifactId>jersey-json</artifactId>
+        <version>${jersey.version}</version>
+    </dependency>
+    
+    <dependency>
+        <groupId>com.sun.jersey</groupId>
+        <artifactId>jersey-bundle</artifactId>
+        <version>${jersey.version}</version>
+    </dependency>
+    
+	<!-- https://mvnrepository.com/artifact/com.sun.jersey/jersey-core -->
+	<dependency>
+	    <groupId>com.sun.jersey</groupId>
+	    <artifactId>jersey-core</artifactId>
+	    <version>${jersey.version}</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>com.sun.jersey</groupId>
+	    <artifactId>jersey-client</artifactId>
+	    <version>${jersey.version}</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/javax.ws.rs/javax.ws.rs-api -->
+	<dependency>
+	    <groupId>javax.ws.rs</groupId>
+	    <artifactId>javax.ws.rs-api</artifactId>
+	    <version>2.0.1</version>
+	</dependency>
+	
+	
+	<dependency>
+	    <groupId>org.slf4j</groupId>
+	    <artifactId>slf4j-api</artifactId>
+	    <version>${org.slf4j-version}</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-jdk14 -->
+	<dependency>
+	    <groupId>org.slf4j</groupId>
+	    <artifactId>slf4j-jdk14</artifactId>
+	    <version>${org.slf4j-version}</version>
+	</dependency>
+	
+  </dependencies>
+  
+   <dependencyManagement>
+	   <dependencies>
+	   
+	      <dependency>
+	         <groupId>org.slf4j</groupId>
+	         <artifactId>slf4j-api</artifactId>
+	         <version>${org.slf4j-version}</version>
+	      </dependency>
+	      
+	      <dependency>
+		    <groupId>org.slf4j</groupId>
+		    <artifactId>slf4j-jdk14</artifactId>
+		    <version>${org.slf4j-version}</version>
+		  </dependency>
+		
+	      <dependency>
+	         <groupId>org.slf4j</groupId>
+	         <artifactId>jcl-over-slf4j</artifactId>
+	         <version>${org.slf4j-version}</version>
+	      </dependency>
+	      
+	      <!-- Since slf4j is a bridge, you need an implementation of it that would 
+	      redirect all calls to slf4j or JCL. Following is to perform logging using 
+	      the basic implementation, choose your preferred implementation 
+	      (it seems you were using logback). -->
+	      <dependency>
+	         <groupId>org.slf4j</groupId>
+	         <artifactId>slf4j-simple</artifactId>
+	         <version>${org.slf4j-version}</version>
+	         <scope>runtime</scope>
+	      </dependency>
+	   </dependencies>
+	</dependencyManagement>
+</project>
