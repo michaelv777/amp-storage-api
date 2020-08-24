@@ -1,18 +1,18 @@
-‰2020-07-20 13:04:24,517 INFO [Test worker] [com.amp.managed.storage.controller.test.ConfigurationControllerTest] - testGetWorkerConfigV2::formattedURL: http://localhost:8090/amp-storage-api/ConfigurationService/getWorkerConfig
-s–2020-07-20 13:04:24,616 DEBUG [Test worker] [org.springframework.web.client.RestTemplate] - HTTP GET http://localhost:8090/amp-storage-api/ConfigurationService/getWorkerConfig?cWorkerName=FacebookWorkerBean
-sπ2020-07-20 13:04:24,733 DEBUG [Test worker] [org.springframework.web.client.RestTemplate] - Accept=[application/xml, text/xml, application/json, application/*+xml, application/*+json]
-sÄ2020-07-20 13:04:24,761 DEBUG [Test worker] [org.apache.http.client.protocol.RequestAddCookies] - CookieSpec selected: default
-sÑ2020-07-20 13:04:24,774 DEBUG [Test worker] [org.apache.http.client.protocol.RequestAuthCache] - Auth cache not set in the context
-sÌ2020-07-20 13:04:24,776 DEBUG [Test worker] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] - Connection request: [route: {}->http://localhost:8090][total kept alive: 0; route allocated: 0 of 5; total allocated: 0 of 10]
-sÛ2020-07-20 13:04:24,798 DEBUG [Test worker] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] - Connection leased: [id: 0][route: {}->http://localhost:8090][total kept alive: 0; route allocated: 1 of 5; total allocated: 1 of 10]
-så2020-07-20 13:04:24,801 DEBUG [Test worker] [org.apache.http.impl.execchain.MainClientExec] - Opening connection {}->http://localhost:8090
-sñ2020-07-20 13:04:24,804 DEBUG [Test worker] [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] - Connecting to localhost/127.0.0.1:8090
-s“2020-07-20 13:04:25,806 DEBUG [Test worker] [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] - Connect to localhost/127.0.0.1:8090 timed out. Connection will be retried using another IP address
-sú2020-07-20 13:04:25,806 DEBUG [Test worker] [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] - Connecting to localhost/0:0:0:0:0:0:0:1:8090
-sì2020-07-20 13:04:26,810 DEBUG [Test worker] [org.apache.http.impl.conn.DefaultManagedHttpClientConnection] - http-outgoing-0: Shutdown connection
-st2020-07-20 13:04:26,810 DEBUG [Test worker] [org.apache.http.impl.execchain.MainClientExec] - Connection discarded
-sı2020-07-20 13:04:26,811 DEBUG [Test worker] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] - Connection released: [id: 0][route: {}->http://localhost:8090][total kept alive: 0; route allocated: 0 of 5; total allocated: 0 of 10]
-s£2020-07-20 13:04:26,813 ERROR [Test worker] [com.amp.managed.storage.controller.test.ConfigurationControllerTest] - testGetWorkerConfigV2::Exception:I/O error on GET request for "http://localhost:8090/amp-storage-api/ConfigurationService/getWorkerConfig": Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+‰2020-07-30 23:08:05,698 INFO [Test worker] [com.amp.managed.storage.controller.test.ConfigurationControllerTest] - testGetWorkerConfigV2::formattedURL: http://localhost:8090/amp-storage-api/ConfigurationService/getWorkerConfig
+s–2020-07-30 23:08:06,171 DEBUG [Test worker] [org.springframework.web.client.RestTemplate] - HTTP GET http://localhost:8090/amp-storage-api/ConfigurationService/getWorkerConfig?cWorkerName=FacebookWorkerBean
+sπ2020-07-30 23:08:06,823 DEBUG [Test worker] [org.springframework.web.client.RestTemplate] - Accept=[application/xml, text/xml, application/json, application/*+xml, application/*+json]
+sÄ2020-07-30 23:08:06,984 DEBUG [Test worker] [org.apache.http.client.protocol.RequestAddCookies] - CookieSpec selected: default
+sÑ2020-07-30 23:08:07,088 DEBUG [Test worker] [org.apache.http.client.protocol.RequestAuthCache] - Auth cache not set in the context
+sÌ2020-07-30 23:08:07,096 DEBUG [Test worker] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] - Connection request: [route: {}->http://localhost:8090][total kept alive: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+sÛ2020-07-30 23:08:07,237 DEBUG [Test worker] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] - Connection leased: [id: 0][route: {}->http://localhost:8090][total kept alive: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+så2020-07-30 23:08:07,272 DEBUG [Test worker] [org.apache.http.impl.execchain.MainClientExec] - Opening connection {}->http://localhost:8090
+sñ2020-07-30 23:08:07,289 DEBUG [Test worker] [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] - Connecting to localhost/127.0.0.1:8090
+s“2020-07-30 23:08:09,504 DEBUG [Test worker] [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] - Connect to localhost/127.0.0.1:8090 timed out. Connection will be retried using another IP address
+sú2020-07-30 23:08:09,505 DEBUG [Test worker] [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] - Connecting to localhost/0:0:0:0:0:0:0:1:8090
+sì2020-07-30 23:08:12,010 DEBUG [Test worker] [org.apache.http.impl.conn.DefaultManagedHttpClientConnection] - http-outgoing-0: Shutdown connection
+st2020-07-30 23:08:12,011 DEBUG [Test worker] [org.apache.http.impl.execchain.MainClientExec] - Connection discarded
+sı2020-07-30 23:08:12,011 DEBUG [Test worker] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] - Connection released: [id: 0][route: {}->http://localhost:8090][total kept alive: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+s£2020-07-30 23:08:12,013 ERROR [Test worker] [com.amp.managed.storage.controller.test.ConfigurationControllerTest] - testGetWorkerConfigV2::Exception:I/O error on GET request for "http://localhost:8090/amp-storage-api/ConfigurationService/getWorkerConfig": Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
 »s org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8090/amp-storage-api/ConfigurationService/getWorkerConfig": Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
 Ä	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:748) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
 ~	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:674) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
@@ -37,35 +37,35 @@
 [	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
 \	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
 U	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
-ù	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106) [gradle-testing-jvm-4.10.2.jar:4.10.2]
-ó	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58) [gradle-testing-jvm-4.10.2.jar:4.10.2]
-ó	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38) [gradle-testing-jvm-4.10.2.jar:4.10.2]
-≤	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.10.2.jar:4.10.2]
-ù	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.10.2.jar:4.10.2]
+ó	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110) [gradle-testing-jvm-5.0.jar:5.0]
+ë	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58) [gradle-testing-jvm-5.0.jar:5.0]
+ë	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38) [gradle-testing-jvm-5.0.jar:5.0]
+¨	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66) [gradle-testing-jvm-5.0.jar:5.0]
+ó	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-5.0.jar:5.0]
 P	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_202]
 b	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_202]
 j	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_202]
 E	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_202]
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.10.2.jar:4.10.2]
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.10.2.jar:4.10.2]
-è	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.10.2.jar:4.10.2]
-û	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.10.2.jar:4.10.2]
+y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-5.0.jar:5.0]
+y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-5.0.jar:5.0]
+â	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-5.0.jar:5.0]
+ò	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-5.0.jar:5.0]
 B	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source) [?:?]
-ã	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:117) [gradle-testing-base-4.10.2.jar:4.10.2]
+Ö	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118) [gradle-testing-base-5.0.jar:5.0]
 P	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_202]
 b	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_202]
 j	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_202]
 E	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_202]
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.10.2.jar:4.10.2]
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.10.2.jar:4.10.2]
-∑	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155) [gradle-messaging-4.10.2.jar:4.10.2]
-∑	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137) [gradle-messaging-4.10.2.jar:4.10.2]
-~	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.10.2.jar:4.10.2]
-ï	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.10.2.jar:4.10.2]
-Ñ	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.10.2.jar:4.10.2]
+y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-5.0.jar:5.0]
+y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-5.0.jar:5.0]
+±	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175) [gradle-messaging-5.0.jar:5.0]
+±	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157) [gradle-messaging-5.0.jar:5.0]
+x	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-5.0.jar:5.0]
+è	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-5.0.jar:5.0]
+~	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-5.0.jar:5.0]
 c	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_202]
 c	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_202]
-î	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.10.2.jar:4.10.2]
+é	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-5.0.jar:5.0]
 9	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_202]
 ™Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
 ó	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156) ~[httpclient-4.5.8.jar:4.5.8]
