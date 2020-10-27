@@ -1,20 +1,58 @@
-‰2020-07-30 23:08:05,698 INFO [Test worker] [com.amp.managed.storage.controller.test.ConfigurationControllerTest] - testGetWorkerConfigV2::formattedURL: http://localhost:8090/amp-storage-api/ConfigurationService/getWorkerConfig
-s–2020-07-30 23:08:06,171 DEBUG [Test worker] [org.springframework.web.client.RestTemplate] - HTTP GET http://localhost:8090/amp-storage-api/ConfigurationService/getWorkerConfig?cWorkerName=FacebookWorkerBean
-sπ2020-07-30 23:08:06,823 DEBUG [Test worker] [org.springframework.web.client.RestTemplate] - Accept=[application/xml, text/xml, application/json, application/*+xml, application/*+json]
-sÄ2020-07-30 23:08:06,984 DEBUG [Test worker] [org.apache.http.client.protocol.RequestAddCookies] - CookieSpec selected: default
-sÑ2020-07-30 23:08:07,088 DEBUG [Test worker] [org.apache.http.client.protocol.RequestAuthCache] - Auth cache not set in the context
-sÌ2020-07-30 23:08:07,096 DEBUG [Test worker] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] - Connection request: [route: {}->http://localhost:8090][total kept alive: 0; route allocated: 0 of 5; total allocated: 0 of 10]
-sÛ2020-07-30 23:08:07,237 DEBUG [Test worker] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] - Connection leased: [id: 0][route: {}->http://localhost:8090][total kept alive: 0; route allocated: 1 of 5; total allocated: 1 of 10]
-så2020-07-30 23:08:07,272 DEBUG [Test worker] [org.apache.http.impl.execchain.MainClientExec] - Opening connection {}->http://localhost:8090
-sñ2020-07-30 23:08:07,289 DEBUG [Test worker] [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] - Connecting to localhost/127.0.0.1:8090
-s“2020-07-30 23:08:09,504 DEBUG [Test worker] [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] - Connect to localhost/127.0.0.1:8090 timed out. Connection will be retried using another IP address
-sú2020-07-30 23:08:09,505 DEBUG [Test worker] [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] - Connecting to localhost/0:0:0:0:0:0:0:1:8090
-sì2020-07-30 23:08:12,010 DEBUG [Test worker] [org.apache.http.impl.conn.DefaultManagedHttpClientConnection] - http-outgoing-0: Shutdown connection
-st2020-07-30 23:08:12,011 DEBUG [Test worker] [org.apache.http.impl.execchain.MainClientExec] - Connection discarded
-sı2020-07-30 23:08:12,011 DEBUG [Test worker] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] - Connection released: [id: 0][route: {}->http://localhost:8090][total kept alive: 0; route allocated: 0 of 5; total allocated: 0 of 10]
-s£2020-07-30 23:08:12,013 ERROR [Test worker] [com.amp.managed.storage.controller.test.ConfigurationControllerTest] - testGetWorkerConfigV2::Exception:I/O error on GET request for "http://localhost:8090/amp-storage-api/ConfigurationService/getWorkerConfig": Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
-»s org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8090/amp-storage-api/ConfigurationService/getWorkerConfig": Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
-Ä	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:748) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+‰2020-10-25 21:50:09,903 INFO [Test worker] [com.amp.managed.storage.controller.test.ConfigurationControllerTest] - testGetWorkerConfigV2::formattedURL: http://localhost:8090/amp-storage-api/ConfigurationService/getWorkerConfig
+s–2020-10-25 21:50:10,045 DEBUG [Test worker] [org.springframework.web.client.RestTemplate] - HTTP GET http://localhost:8090/amp-storage-api/ConfigurationService/getWorkerConfig?cWorkerName=FacebookWorkerBean
+sπ2020-10-25 21:50:10,225 DEBUG [Test worker] [org.springframework.web.client.RestTemplate] - Accept=[application/xml, text/xml, application/json, application/*+xml, application/*+json]
+sÄ2020-10-25 21:50:10,267 DEBUG [Test worker] [org.apache.http.client.protocol.RequestAddCookies] - CookieSpec selected: default
+sÑ2020-10-25 21:50:10,294 DEBUG [Test worker] [org.apache.http.client.protocol.RequestAuthCache] - Auth cache not set in the context
+sÌ2020-10-25 21:50:10,296 DEBUG [Test worker] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] - Connection request: [route: {}->http://localhost:8090][total kept alive: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+sÛ2020-10-25 21:50:10,339 DEBUG [Test worker] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] - Connection leased: [id: 0][route: {}->http://localhost:8090][total kept alive: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+så2020-10-25 21:50:10,344 DEBUG [Test worker] [org.apache.http.impl.execchain.MainClientExec] - Opening connection {}->http://localhost:8090
+sñ2020-10-25 21:50:10,351 DEBUG [Test worker] [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] - Connecting to localhost/127.0.0.1:8090
+sß2020-10-25 21:50:10,356 DEBUG [Test worker] [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] - Connection established 127.0.0.1:57269<->127.0.0.1:8090
+s”2020-10-25 21:50:10,356 DEBUG [Test worker] [org.apache.http.impl.execchain.MainClientExec] - Executing request GET /amp-storage-api/ConfigurationService/getWorkerConfig?cWorkerName=FacebookWorkerBean HTTP/1.1
+s2020-10-25 21:50:10,357 DEBUG [Test worker] [org.apache.http.impl.execchain.MainClientExec] - Target auth state: UNCHALLENGED
+s~2020-10-25 21:50:10,358 DEBUG [Test worker] [org.apache.http.impl.execchain.MainClientExec] - Proxy auth state: UNCHALLENGED
+sæ2020-10-25 21:50:10,364 DEBUG [Test worker] [org.apache.http.headers] - http-outgoing-0 >> GET /amp-storage-api/ConfigurationService/getWorkerConfig?cWorkerName=FacebookWorkerBean HTTP/1.1
+su2020-10-25 21:50:10,365 DEBUG [Test worker] [org.apache.http.headers] - http-outgoing-0 >> Accept: application/json
+s{2020-10-25 21:50:10,365 DEBUG [Test worker] [org.apache.http.headers] - http-outgoing-0 >> Content-Type: application/json
+s{2020-10-25 21:50:10,365 DEBUG [Test worker] [org.apache.http.headers] - http-outgoing-0 >> Content-Type: application/json
+sq2020-10-25 21:50:10,365 DEBUG [Test worker] [org.apache.http.headers] - http-outgoing-0 >> Host: localhost:8090
+ss2020-10-25 21:50:10,365 DEBUG [Test worker] [org.apache.http.headers] - http-outgoing-0 >> Connection: Keep-Alive
+së2020-10-25 21:50:10,365 DEBUG [Test worker] [org.apache.http.headers] - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.8 (Java/1.8.0_202)
+sz2020-10-25 21:50:10,366 DEBUG [Test worker] [org.apache.http.headers] - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+s≈2020-10-25 21:50:10,366 DEBUG [Test worker] [org.apache.http.wire] - http-outgoing-0 >> "GET /amp-storage-api/ConfigurationService/getWorkerConfig?cWorkerName=FacebookWorkerBean HTTP/1.1[\r][\n]"
+s|2020-10-25 21:50:10,367 DEBUG [Test worker] [org.apache.http.wire] - http-outgoing-0 >> "Accept: application/json[\r][\n]"
+sÇ2020-10-25 21:50:10,367 DEBUG [Test worker] [org.apache.http.wire] - http-outgoing-0 >> "Content-Type: application/json[\r][\n]"
+sÇ2020-10-25 21:50:10,368 DEBUG [Test worker] [org.apache.http.wire] - http-outgoing-0 >> "Content-Type: application/json[\r][\n]"
+sx2020-10-25 21:50:10,368 DEBUG [Test worker] [org.apache.http.wire] - http-outgoing-0 >> "Host: localhost:8090[\r][\n]"
+sz2020-10-25 21:50:10,369 DEBUG [Test worker] [org.apache.http.wire] - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+sò2020-10-25 21:50:10,370 DEBUG [Test worker] [org.apache.http.wire] - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.8 (Java/1.8.0_202)[\r][\n]"
+sÅ2020-10-25 21:50:10,370 DEBUG [Test worker] [org.apache.http.wire] - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+sd2020-10-25 21:50:10,370 DEBUG [Test worker] [org.apache.http.wire] - http-outgoing-0 >> "[\r][\n]"
+sq2020-10-25 21:50:10,379 DEBUG [Test worker] [org.apache.http.wire] - http-outgoing-0 << "HTTP/1.1 404 [\r][\n]"
+sâ2020-10-25 21:50:10,379 DEBUG [Test worker] [org.apache.http.wire] - http-outgoing-0 << "Content-Type: text/html;charset=utf-8[\r][\n]"
+sx2020-10-25 21:50:10,379 DEBUG [Test worker] [org.apache.http.wire] - http-outgoing-0 << "Content-Language: en[\r][\n]"
+sx2020-10-25 21:50:10,380 DEBUG [Test worker] [org.apache.http.wire] - http-outgoing-0 << "Content-Length: 1134[\r][\n]"
+sá2020-10-25 21:50:10,380 DEBUG [Test worker] [org.apache.http.wire] - http-outgoing-0 << "Date: Mon, 26 Oct 2020 01:50:10 GMT[\r][\n]"
+sd2020-10-25 21:50:10,380 DEBUG [Test worker] [org.apache.http.wire] - http-outgoing-0 << "[\r][\n]"
+sË	2020-10-25 21:50:10,381 DEBUG [Test worker] [org.apache.http.wire] - http-outgoing-0 << "<!doctype html><html lang="en"><head><title>HTTP Status 404 [0xe2][0x80][0x93] Not Found</title><style type="text/css">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 [0xe2][0x80][0x93] Not Found</h1><hr class="line" /><p><b>Type</b> Status Report</p><p><b>Message</b> &#47;amp-storage-api&#47;ConfigurationService&#47;getWorkerConfig</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class="line" /><h3>Apache Tomcat/9.0.21</h3></body></html>"
+sj2020-10-25 21:50:10,388 DEBUG [Test worker] [org.apache.http.headers] - http-outgoing-0 << HTTP/1.1 404 
+sÇ2020-10-25 21:50:10,388 DEBUG [Test worker] [org.apache.http.headers] - http-outgoing-0 << Content-Type: text/html;charset=utf-8
+sq2020-10-25 21:50:10,388 DEBUG [Test worker] [org.apache.http.headers] - http-outgoing-0 << Content-Language: en
+sq2020-10-25 21:50:10,388 DEBUG [Test worker] [org.apache.http.headers] - http-outgoing-0 << Content-Length: 1134
+sÄ2020-10-25 21:50:10,389 DEBUG [Test worker] [org.apache.http.headers] - http-outgoing-0 << Date: Mon, 26 Oct 2020 01:50:10 GMT
+sâ2020-10-25 21:50:10,399 DEBUG [Test worker] [org.apache.http.impl.execchain.MainClientExec] - Connection can be kept alive indefinitely
+st2020-10-25 21:50:10,413 DEBUG [Test worker] [org.springframework.web.client.RestTemplate] - Response 404 NOT_FOUND
+s¬2020-10-25 21:50:10,419 DEBUG [Test worker] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] - Connection [id: 0][route: {}->http://localhost:8090] can be kept alive indefinitely
+só2020-10-25 21:50:10,420 DEBUG [Test worker] [org.apache.http.impl.conn.DefaultManagedHttpClientConnection] - http-outgoing-0: set socket timeout to 0
+sı2020-10-25 21:50:10,420 DEBUG [Test worker] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] - Connection released: [id: 0][route: {}->http://localhost:8090][total kept alive: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+s˘2020-10-25 21:50:10,436 ERROR [Test worker] [com.amp.managed.storage.controller.test.ConfigurationControllerTest] - testGetWorkerConfigV2::Exception:404 : [<!doctype html><html lang="en"><head><title>HTTP Status 404 ‚Äì Not Found</title><style type="text/css">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {... (1134 bytes)]
+®s org.springframework.web.client.HttpClientErrorException$NotFound: 404 : [<!doctype html><html lang="en"><head><title>HTTP Status 404 ‚Äì Not Found</title><style type="text/css">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {... (1134 bytes)]
+ï	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+†	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:170) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+†	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:112) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+ë	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+Ö	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:782) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+Ä	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:740) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
 ~	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:674) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
 	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:583) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
 è	at com.amp.managed.storage.controller.test.ConfigurationControllerTest.testGetWorkerConfigV2(ConfigurationControllerTest.java:259) [test/:?]
@@ -67,44 +105,3 @@
 c	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_202]
 é	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-5.0.jar:5.0]
 9	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_202]
-™Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
-ó	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156) ~[httpclient-4.5.8.jar:4.5.8]
-ï	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374) ~[httpclient-4.5.8.jar:4.5.8]
-y	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393) ~[httpclient-4.5.8.jar:4.5.8]
-r	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236) ~[httpclient-4.5.8.jar:4.5.8]
-n	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186) ~[httpclient-4.5.8.jar:4.5.8]
-g	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[httpclient-4.5.8.jar:4.5.8]
-n	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) ~[httpclient-4.5.8.jar:4.5.8]
-y	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.8.jar:4.5.8]
-x	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83) ~[httpclient-4.5.8.jar:4.5.8]
-x	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.8.jar:4.5.8]
-¨	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-≤	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-ò	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-Ä	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:739) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	... 52 more
-CCaused by: java.net.ConnectException: Connection refused: connect
-N	at java.net.DualStackPlainSocketImpl.connect0(Native Method) ~[?:1.8.0_202]
-f	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79) ~[?:1.8.0_202]
-a	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[?:1.8.0_202]
-h	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[?:1.8.0_202]
-_	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[?:1.8.0_202]
-O	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[?:1.8.0_202]
-O	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:1.8.0_202]
-=	at java.net.Socket.connect(Socket.java:589) ~[?:1.8.0_202]
-ê	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75) ~[httpclient-4.5.8.jar:4.5.8]
-ó	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142) ~[httpclient-4.5.8.jar:4.5.8]
-ï	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374) ~[httpclient-4.5.8.jar:4.5.8]
-y	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393) ~[httpclient-4.5.8.jar:4.5.8]
-r	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236) ~[httpclient-4.5.8.jar:4.5.8]
-n	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186) ~[httpclient-4.5.8.jar:4.5.8]
-g	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[httpclient-4.5.8.jar:4.5.8]
-n	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) ~[httpclient-4.5.8.jar:4.5.8]
-y	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.8.jar:4.5.8]
-x	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83) ~[httpclient-4.5.8.jar:4.5.8]
-x	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.8.jar:4.5.8]
-¨	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-≤	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-ò	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-Ä	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:739) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	... 52 more

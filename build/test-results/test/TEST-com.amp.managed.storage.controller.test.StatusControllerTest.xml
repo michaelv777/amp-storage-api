@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.amp.managed.storage.controller.test.StatusControllerTest" tests="5" skipped="5" failures="0" errors="0" timestamp="2020-07-31T03:08:12" hostname="CAW1PF16H7PB" time="0.0">
+<testsuite name="com.amp.managed.storage.controller.test.StatusControllerTest" tests="5" skipped="5" failures="0" errors="0" timestamp="2020-10-26T01:50:10" hostname="CAW1PF16H7PB" time="0.001">
   <properties/>
-  <testcase name="testGetItemOpStatusYoutube" classname="com.amp.managed.storage.controller.test.StatusControllerTest" time="0.0">
+  <testcase name="testGetItemOpStatusYoutube" classname="com.amp.managed.storage.controller.test.StatusControllerTest" time="0.001">
     <skipped/>
   </testcase>
   <testcase name="testSayHello" classname="com.amp.managed.storage.controller.test.StatusControllerTest" time="0.0">
